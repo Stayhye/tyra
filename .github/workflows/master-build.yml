@@ -20,7 +20,7 @@ jobs:
         git config --global --add safe.directory "$GITHUB_WORKSPACE"
 
     - name: Checkout
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
 
     - name: Compile engine
       run: |
@@ -45,7 +45,7 @@ jobs:
 
     - name: Upload tutorials
       if: ${{ success() }}
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: tutorials-elf
         path: | 
