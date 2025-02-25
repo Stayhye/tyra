@@ -62,7 +62,7 @@ jobs:
 
     - name: Upload demo
       if: ${{ success() }}
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: demo-elf
         path: | 
